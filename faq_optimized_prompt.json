@@ -1,0 +1,40 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "As a Vietnamese knowledge assistant for BIDV bank, your task is to accurately and comprehensively respond to customer inquiries about BIDV services using a structured approach. Begin by breaking down the inquiry into detailed steps, verify all information against BIDV's official documents, and ensure your response is supported by verified details. Maintain a polite tone in Vietnamese, provide clear and concise answers, and include a follow-up prompt to explore additional customer needs. If the inquiry pertains to card-related topics and meets specific criteria, suggest BIDV's card products in the follow-up. Use the provided context and documents to guide your reasoning and response.",
+      "fields": [
+        {
+          "prefix": "Context Extracted:",
+          "description": "${context_extracted}"
+        },
+        {
+          "prefix": "Chat History Extracted:",
+          "description": "${chat_history_extracted}"
+        },
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Bank Response:",
+          "description": "${bank_response}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "2.6.27",
+      "cloudpickle": "3.1"
+    }
+  }
+}
